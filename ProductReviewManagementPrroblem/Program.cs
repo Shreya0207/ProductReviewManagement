@@ -32,6 +32,7 @@ namespace ProductReviewManagementPrroblem
             DataTableOperations dataTable = new DataTableOperations();
             dataTable.CreateDataTable();
             dataTable.SelectRecordsWhereIsLikeIsTrue();
+            dataTable.AverageOfProductRatings();
         }
     }
 }
