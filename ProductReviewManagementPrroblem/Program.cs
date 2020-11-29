@@ -29,6 +29,8 @@ namespace ProductReviewManagementPrroblem
             management.RetreiveIdAndReview(productReviewList);
             management.SkipFiveRecords(productReviewList);
             management.SelectIdAndReview(productReviewList);
+            DataTableOperations dataTable = new DataTableOperations();
+            dataTable.CreateDataTable();
         }
     }
 }
