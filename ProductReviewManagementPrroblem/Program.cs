@@ -34,6 +34,7 @@ namespace ProductReviewManagementPrroblem
             dataTable.SelectRecordsWhereIsLikeIsTrue();
             dataTable.AverageOfProductRatings();
             dataTable.SelectRecordsWhereReviewIsNice();
+            dataTable.OrderByRatingOnCondition();
         }
     }
 }

@@ -56,6 +56,16 @@ namespace ProductReviewManagementPrroblem
                 Console.WriteLine("ProductId :" + item.ItemArray[0] + " UserId :" + item.ItemArray[1] + " Rating :" + item.ItemArray[2] + " Review :" + item.ItemArray[3] + " IsLike :" + item.ItemArray[4]);
             }
         }
+        public void OrderByRatingOnCondition()
+        {
+            var recordedList = table.AsEnumerable()
+                        .Where(x => x.Field<int>("UserID") == 10)
+                        .OrderBy(x => x.Field<double>("Rating"));
+            foreach (var item in recordedList)
+            {
+                Console.WriteLine("ProductId :" + item.ItemArray[0] + " UserId :" + item.ItemArray[1] + " Rating :" + item.ItemArray[2] + " Review :" + item.ItemArray[3] + " IsLike :" + item.ItemArray[4]);
+            }
+        }
     }
 }
 
