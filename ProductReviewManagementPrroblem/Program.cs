@@ -26,6 +26,7 @@ namespace ProductReviewManagementPrroblem
             management.TopThreeRecords(productReviewList);
             management.SelectedRecords(productReviewList);
             management.RetrieveCountOfRecords(productReviewList);
+            management.RetreiveIdAndReview(productReviewList);
         }
     }
 }
