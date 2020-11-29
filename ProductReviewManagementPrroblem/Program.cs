@@ -31,6 +31,7 @@ namespace ProductReviewManagementPrroblem
             management.SelectIdAndReview(productReviewList);
             DataTableOperations dataTable = new DataTableOperations();
             dataTable.CreateDataTable();
+            dataTable.SelectRecordsWhereIsLikeIsTrue();
         }
     }
 }
